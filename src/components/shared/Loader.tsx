@@ -12,10 +12,11 @@ const spinKeyframes = keyframes`
 export interface LoaderProps {
   size?: number;
   width?: number;
+  className?: string;
 }
 
 const LoaderDiv = styled.div.attrs({
-  "aria-label": "Loading...",
+  "aria-label": "Loading..."
 })<LoaderProps>`
   animation: ${spinKeyframes} 500ms infinite linear;
   color: gray;
